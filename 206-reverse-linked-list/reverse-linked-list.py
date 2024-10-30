@@ -10,13 +10,9 @@ class Solution:
             return head
 
         tmp = self.reverseList(head.next)
-        ans = tmp
-
-        while tmp.next != None:
-            tmp = tmp.next
         
-        tmp.next = head
+        head.next.next = head
         head.next = None
 
-        return ans
+        return tmp
         
