@@ -1,8 +1,7 @@
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
 
-        if amount == 0: return 0
-        if amount < 0: return sys.maxsize
+
 
         dp = [sys.maxsize] * (amount + 1)
 
