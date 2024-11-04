@@ -13,7 +13,7 @@ class Solution:
         
         if idx == -1:
             # print("no swapping")
-            nums.sort()
+            nums.reverse()
             return
         
         for i in range(len(nums)- 1, idx, -1):
