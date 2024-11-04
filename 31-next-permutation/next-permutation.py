@@ -21,6 +21,6 @@ class Solution:
                 nums[i], nums[idx] = nums[idx], nums[i]
                 break
         
-        nums[idx+1:] = sorted(nums[idx+1:])
+        nums[idx+1:] = reversed(nums[idx+1:])
 
         
